@@ -1,0 +1,91 @@
+{
+  "formName": "form test",
+  "titel": "My Form",
+  "details": "This form is generated dynamically",
+  "elements": [
+    {
+      "id": 1,
+      "type": "text",
+      "elType": "inputType",
+      "placeholder": "Please provide your name",
+      "label": "Name",
+      "value": "Devendra",
+      "validation": {
+        "isRequired": true,
+        "minLength": 10
+      },
+      "rule": {
+        "operator": "=",
+        "value": "one",
+        "reference": [2]
+      }
+    },
+    {
+      "id": 2,
+      "type": "select",
+      "elType": "selectlist",
+      "placeholder": "name",
+      "label": "Name",
+      "options": [
+        {
+          "id": "1",
+          "value": "one",
+          "label": "One"
+        },
+        {
+          "id": "2",
+          "value": "two",
+          "label": "Two"
+        }
+      ],
+      "validation": {
+        "isRequired": true,
+        "minLength": 10
+      },
+      "rule": {
+        "operator": "=",
+        "value": "two",
+        "reference": [5]
+      }
+    },
+    {
+      "id": 3,
+      "type": "radio",
+      "elType": "radio",
+      "placeholder": "name",
+      "label": "Gender",
+      "choices": [
+        {
+          "choice": "male",
+          "key": "gender",
+          "id": 1
+        },
+        {
+          "choice": "female",
+          "key": "gender",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "elType": "inputType",
+      "placeholder": "Address",
+      "label": "Address",
+      "value": "",
+      "isReferance": true,
+      "validation": {
+        "isRequired": true,
+        "minLength": 10
+      }
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "elType": "button",
+      "name": "Submit",
+      "label": "Name"
+    }
+  ]
+}
